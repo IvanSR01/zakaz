@@ -20,7 +20,7 @@ const Aside: FC = () => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.header}>
-				<h3>Актуальные статьи</h3>
+				<h2>Актуальные статьи</h2>
 				<div className={styles.arrows}>
 					<button className={clsx(styles.arrowStyles)} onClick={() => handleClick(true)}>
 						<svg

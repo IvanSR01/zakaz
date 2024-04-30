@@ -23,3 +23,10 @@ body {
 		text-wrap: balance;
 	}
 }
+
+html {
+	overflow: hidden;
+}
+body {
+	overflow: hidden;
+}

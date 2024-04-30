@@ -1,158 +1,166 @@
 .wrapper {
-  width: 100%;
-  margin-bottom: 20px;
-  max-width: 100%;
-  .button {
-    padding: 5px 10px;
-    background-color: transparent;
-    border: 1px solid #2078A580;
-    border-radius: 100px;
-    color: #2078a5;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 12px;
-    @media (max-width: 1200px) {
-      font-size: 10px;
-    }
-    cursor: pointer;
-  }
-  .arrowStyles {
-    display: flex;
-    align-items: center;
+	width: 100%;
+	margin-bottom: 20px;
+	max-width: 100%;
+	.button {
+		padding: 5px 10px;
+		background-color: transparent;
+		border: 1px solid #2078a580;
+		border-radius: 100px;
+		color: #2078a5;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		font-size: 12px;
+		@media (max-width: 1200px) {
+			font-size: 10px;
+		}
+		cursor: pointer;
+	}
+	.arrowStyles {
+		display: flex;
+		align-items: center;
 		justify-content: center;
-    padding: 4px 0px;
-    width: 85px;
-    background-color: transparent;
-    border: 2px solid #2078a5;
-    border-radius: 100px;
-    color: #2078a5;
-    gap: 5px;
-    font-size: 12px;
-    cursor: pointer;
-    svg {
-      margin-top: 2px;
-    }
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .arrows {
-      display: flex;
-      gap: 10px;
-    }
-  }
-  .scrollLayout {
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-  }
-  .scrollLayout::-webkit-scrollbar {
-    width: 0;
-    display: none;
-  }
-  .scrollLayout::-ms-scrollbar {
-    display: none;
-  }
-  .items {
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    .item {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      flex-direction: column;
-      padding: 20px;
-      height: 348px;
-      min-width: calc(100% / 4.1);
-      @media (max-width: 1200px) {
-        padding: 15px;
-        // gap: 0;
-        height: auto;
+		padding: 4px 0px;
+		width: 85px;
+		background-color: transparent;
+		border: 2px solid #2078a5;
+		border-radius: 100px;
+		color: #2078a5;
+		gap: 5px;
+		font-size: 12px;
+		cursor: pointer;
+		svg {
+			margin-top: 2px;
+		}
+	}
+	.header {
+		// height: 20px;
+		display: flex;
+		justify-content: space-between;
+		// align-items: center;
+		.arrows {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+		h2 {
+			font-size: 20px;
+			@media (max-width: 600px) {
+				font-size: 16px;
+			}
+		}
+	}
+	.scrollLayout {
+		overflow-x: scroll;
+		scroll-behavior: smooth;
+		scrollbar-width: none;
+	}
+	.scrollLayout::-webkit-scrollbar {
+		width: 0;
+		display: none;
+	}
+	.scrollLayout::-ms-scrollbar {
+		display: none;
+	}
+	.items {
+		margin-top: 20px;
+		width: 100%;
+		display: flex;
+		gap: 10px;
+		.item {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			flex-direction: column;
+			padding: 20px;
+			height: 348px;
+			min-width: calc(100% / 4.1);
+			@media (max-width: 1200px) {
+				padding: 15px;
+				// gap: 0;
+				height: auto;
 				justify-content: flex-start;
-      }
-      @media (min-width: 601px) and (max-width: 1200px) {
-        min-width: calc(100% / 3.1);
-      }
-      @media (max-width: 600px) {
-        min-width: calc(100% / 2.05);
-      }
-      background-color: #ffff;
-      position: relative;
-      .img {
-        width: 100%;
-        min-height: 100px;
-        @media (max-width: 600px) {
-          min-height: 80px;
-        }
-        img {
-          height: 100%;
-          width: 100%;
-          border-radius: 20px;
-        }
-      }
-      .vidgest {
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        background: rgba(0, 0, 0, 0.179);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        padding: 3px 6px;
-        border-radius: 100px;
-        color: #fff;
-      }
-      .tag {
-        margin-top: 10px;
-      }
-      .content {
-        margin-top: 10px;
-        font-size: 16px;
-        min-height: 80px;
-        -webkit-line-clamp: 4; /* Число отображаемых строк */
-        display: -webkit-box; /* Включаем флексбоксы */
-        -webkit-box-orient: vertical; /* Вертикальная ориентация */
-        overflow: hidden;
-        text-overflow: ellipsis;
-        @media (max-width: 600px) {
-          min-height: 48px;
-          font-size: 14px;
-        }
-        line-height: 20px;
-        color: #000;
-      }
-      .bottom {
-        margin-top: 10px;
-        color: #969ea4;
-        font-size: 14px;
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        .date {
-          display: flex;
-          font-size: 14px;
-          @media (max-width: 1200px) {
-            font-size: 12px;
-          }
-        }
-        .line {
-          width: 100%;
-          height: 1px;
-          background-color: #969ea4;
-        }
-        @media (max-width: 600px) {
-          font-size: 12px;
-        }
-      }
-      border-radius: 20px;
-    }
-  }
+			}
+			@media (min-width: 601px) and (max-width: 1200px) {
+				min-width: calc(100% / 3.1);
+			}
+			@media (max-width: 600px) {
+				min-width: calc(100% / 2.05);
+			}
+			background-color: #ffff;
+			position: relative;
+			.img {
+				width: 100%;
+				min-height: 100px;
+				@media (max-width: 600px) {
+					min-height: 80px;
+				}
+				img {
+					height: 100%;
+					width: 100%;
+					border-radius: 20px;
+				}
+			}
+			.vidgest {
+				position: absolute;
+				top: 30px;
+				left: 30px;
+				background: rgba(0, 0, 0, 0.179);
+				border-radius: 16px;
+				box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+				backdrop-filter: blur(5px);
+				-webkit-backdrop-filter: blur(5px);
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				padding: 3px 6px;
+				border-radius: 100px;
+				color: #fff;
+			}
+			.tag {
+				margin-top: 10px;
+			}
+			.content {
+				margin-top: 10px;
+				font-size: 16px;
+				min-height: 80px;
+				-webkit-line-clamp: 4; /* Число отображаемых строк */
+				display: -webkit-box; /* Включаем флексбоксы */
+				-webkit-box-orient: vertical; /* Вертикальная ориентация */
+				overflow: hidden;
+				text-overflow: ellipsis;
+				@media (max-width: 600px) {
+					min-height: 48px;
+					font-size: 14px;
+				}
+				line-height: 20px;
+				color: #000;
+			}
+			.bottom {
+				margin-top: 10px;
+				color: #969ea4;
+				font-size: 14px;
+				display: flex;
+				flex-direction: column;
+				gap: 6px;
+				.date {
+					display: flex;
+					font-size: 14px;
+					@media (max-width: 1200px) {
+						font-size: 12px;
+					}
+				}
+				.line {
+					width: 100%;
+					height: 1px;
+					background-color: #969ea4;
+				}
+				@media (max-width: 600px) {
+					font-size: 12px;
+				}
+			}
+			border-radius: 20px;
+		}
+	}
 }
