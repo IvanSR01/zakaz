@@ -1,0 +1,57 @@
+.selectInput {
+	max-height: 60px !important;
+	cursor: pointer;
+	width: 100%;
+	padding: 18px 20px 18px 20px;
+	border: none;
+	outline: none;
+	background-color: #f5f5f5;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+	.first {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		p {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			color: #121212;
+		}
+		.checkbox {
+			position: relative;
+			width: 20px;
+			height: 20px;
+			background: #ffff;
+			border-radius: 5px;
+			display: inline-block;
+		}
+
+		.checkbox::after {
+			content: '';
+			position: absolute;
+			top: 5px;
+			left: 7px;
+			width: 5px;
+			height: 10px;
+			border: solid white;
+			border-width: 0 2px 2px 0;
+			transform: rotate(45deg);
+			opacity: 0;
+		}
+		.hidden-checkbox {
+			position: absolute;
+		}
+		.hidden-checkbox:checked + .checkbox::after {
+			opacity: 1;
+		}
+		.hidden-checkbox:checked + .checkbox {
+			background: #2078A5;
+		}
+	}
+	.count {
+		color: #a3afb8;
+		font-size: 16px !important;
+	}
+}

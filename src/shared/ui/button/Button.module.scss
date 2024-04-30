@@ -1,0 +1,28 @@
+.button {
+	padding: 10px 24px;
+	@media (max-width: 1200px) {
+		padding: 10px 10px;
+	}
+	border-radius: 10px;
+	font-weight: 400;
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: -0.03em;
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: background 0.5s;
+}
+
+.styleOne {
+	background: #fdaf39;
+	color: #121212;
+}
+.styleOne:hover {
+	background: #fff;
+	border-color: #fdaf39;
+}
+
+.styleTwo {
+	background: #F5F5F5;
+	color: #2078a5;
+}

@@ -1,0 +1,50 @@
+.menu {
+	// position: relative;
+
+	.modal {
+		z-index: 1000000;
+		position: fixed;
+		overflow: hidden;
+		top: 80px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #00000046;
+		.content {
+			position: absolute;
+			top: 0px;
+			right: 0;
+			left: 0;
+			background-color: #fff;
+			height: 386px;
+			padding: 40px;
+			display: flex;
+			justify-content: center;
+			.items {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+				width: 30vw;
+				@media (max-width: 600px) {
+					width: 50vw;
+				}
+				a {
+					text-align: center;
+					height: 22px;
+					width: 100%;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 18px;
+					line-height: 120%;
+					text-align: center;
+					letter-spacing: -0.03em;
+					color: #000000;
+				}
+				p {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

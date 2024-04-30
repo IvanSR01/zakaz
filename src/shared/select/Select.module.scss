@@ -1,0 +1,72 @@
+.wrapper {
+	width: 100%;
+	.title {
+		width: 100%;
+		font-size: 16px;
+		color: #2078a5;
+		margin-bottom: 10px;
+	}
+	.select {
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding: 4px 19px 4px 31px;
+		height: 63px;
+		border-radius: 20px;
+		.input {
+			background-color: transparent;
+			color: #000;
+			border: none;
+			outline: none;
+		}
+		.selected {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+		.activeSvg {
+			transform: rotate(180deg);
+		}
+		.list {
+			z-index: 1000;
+			top: 75px;
+			left: -0px;
+			position: absolute;
+			width: 100%;
+			// background-color: #f5f5f5;
+			border-radius: 20px;
+			overflow-x: hidden;
+			overflow-y: auto;
+			max-height: 444px;
+			box-shadow: 0px 10px 20px #e6e6e6;
+			scrollbar-color: #2078a5 #e4e4e4;
+			.list::-webkit-scrollbar {
+				width: 12px; /* ширина scrollbar */
+			}
+			.list::-webkit-scrollbar-track {
+				background: #e4e4e4; /* цвет дорожки */
+			}
+			.list::-webkit-scrollbar-thumb {
+				background-color: #2078a5; /* цвет плашки */
+				border-radius: 20px; /* закругления плашки */
+				border: 3px solid #e4e4e4; /* padding вокруг плашки */
+			}
+			.item {
+				border-bottom: 1px solid #e2e1e1;
+				padding: 20px 31px;
+				height: 63px;
+				cursor: pointer;
+			}
+			.item:last-child {
+				border: none;
+			}
+			.item:hover {
+				// filter: brightness(10%);
+			}
+		}
+	}
+}
+
+.defaultStyle {
+	background-color: #f5f5f5;
+}

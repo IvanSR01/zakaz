@@ -1,0 +1,17 @@
+.group {
+  position: relative;
+  .input {
+    max-height: 60px !important;
+    width: 100%;
+    padding: 18px 40px 18px 20px;
+    border: none;
+    outline: none;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+  }
+  .search {
+    top: 15px;
+    right: 25px;
+    position: absolute;
+  }
+}

@@ -1,0 +1,151 @@
+.wrapper {
+	min-height: 83.1vh;
+	background-color: #f0f0f0;
+	padding: 50px 0;
+	h1 {
+		font-size: 50px;
+		@media (max-width: 1200px) {
+			font-size: 30px;
+		}
+		margin-bottom: 20px;
+	}
+	.search {
+		margin-bottom: 20px;
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		flex-wrap: wrap;
+		h2 {
+			width: 130px;
+			font-size: 25px;
+		}
+		.widthSelectOne {
+			width: 47%;
+			@media (max-width: 1200px) {
+				width: 100%;
+			}
+		}
+		.line {
+			border-bottom: 1px solid #0000;
+		}
+		.widthSelectTwo {
+			position: relative;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			width: 34%;
+			@media (max-width: 1200px) {
+				width: 100%;
+			}
+			.svg {
+				margin-top: 10px;
+				@media (min-width: 1201px) {
+					position: absolute;
+					right: -50px;
+				}
+			}
+		}
+		.or {
+			width: 10%;
+			@media (max-width: 1200px) {
+				width: 50%;
+			}
+		}
+		.buttons {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			@media (max-width: 1200px) {
+				flex-wrap: nowrap;
+			}
+			align-items: center;
+			gap: 20px;
+			.addButton {
+				width: 100%;
+				@media (max-width: 1200px) {
+					width: 50px;
+				}
+				button {
+					background: #fcecce;
+					padding: 10px 20px;
+					border-radius: 10px;
+					height: 58px;
+					width: 58px;
+				}
+			}
+			.button {
+				width: 230px;
+				padding: 14px 24px;
+				@media (max-width: 1200px) {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.components {
+		display: flex;
+		align-items: flex-start;
+		gap: 20px;
+	}
+	.layout {
+		background-color: #fff;
+		padding: 20px;
+		border-radius: 20px;
+	}
+	.searching {
+		width: 72%;
+		@media (max-width: 1200px) {
+			width: 100%;
+		}
+		.header {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 8px;
+			font-size: 25px;
+			p {
+			}
+			span {
+				color: #b5c1c9;
+			}
+			padding-bottom: 20px;
+		}
+		.line {
+			border-bottom: 1px solid #eaeaea;
+			height: 2px;
+		}
+		.items {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 13px;
+			width: 100%;
+		}
+	}
+}
+.category {
+	width: 28%;
+	@media (max-width: 1200px) {
+		width: 97%;
+	}
+	.title {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		color: #2078a5 !important;
+		font-size: 16px !important;
+	}
+	.content {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		.all {
+			width: 100%;
+			text-align: center;
+			color: #2078a5;
+			text-decoration: underline;
+			cursor: pointer;
+			font-size: 14px !important;
+		}
+	}
+}
