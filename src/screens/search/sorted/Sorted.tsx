@@ -2,7 +2,7 @@ import { FC, useEffect, useRef, useState } from 'react'
 import styles from './Sorted.module.scss'
 import { ISorted } from './Sorted-interface'
 
-const Sorted: FC<ISorted> = ({ sortOptions }) => {
+const Sorted: FC<ISorted> = ({ sortOptions, title }) => {
 	const [isOpen, setIsOpen] = useState(false)
 	const [value, setValue] = useState(sortOptions[0] || '')
 
@@ -23,7 +23,7 @@ const Sorted: FC<ISorted> = ({ sortOptions }) => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.heading} onClick={() => setIsOpen(!isOpen)}>
-				<p>Сортировка по</p>
+				<p>{title}</p>
 				<h3>{value}</h3>
 				<svg
 					width="18"

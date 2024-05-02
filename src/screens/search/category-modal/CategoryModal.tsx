@@ -1,7 +1,7 @@
 import { FC, useEffect, useRef, useState } from 'react'
 import styles from './CategoryModal.module.scss'
 import Category from '../Category'
-
+import './styles.scss'
 const CategoryModal: FC = () => {
 	const [isOpen, setIsOpen] = useState<boolean>(false)
 	const modalRef = useRef(null)
@@ -41,7 +41,7 @@ const CategoryModal: FC = () => {
 			{isOpen && (
 				<div className={styles.modal}>
 					<div className={styles.content} ref={modalRef}>
-						{/* <div className={styles.line}></div> */}
+						<div className={styles.line}></div>
 						<Category />
 					</div>
 				</div>

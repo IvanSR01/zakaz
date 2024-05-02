@@ -1,0 +1,17 @@
+.wrapper {
+	width: 300px;
+	align-items: center;
+  display: flex;
+	gap: 15px;
+  .input {
+    padding: 20px 0px;
+    text-align: center;
+    width: 86px;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    color: #2078a5;
+    text-decoration: underline;
+  }
+}

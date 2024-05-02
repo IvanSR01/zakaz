@@ -121,6 +121,14 @@
 			width: 100%;
 		}
 	}
+	.footer {
+		display: flex;
+		justify-content: space-between;
+		width: 76%;
+		@media (max-width: 1200px) {
+			width: 100%;
+		}
+	}
 }
 .category {
 	width: 28%;

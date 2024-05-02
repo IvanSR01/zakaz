@@ -12,6 +12,7 @@ import Category from './Category'
 import Sorted from './sorted/Sorted'
 import CategoryModal from './category-modal/CategoryModal'
 import Pagination from './pagination/Pagination'
+import ShowBy from './show-by/ShowBy'
 
 const Search: FC = () => {
 	const width = useReSize()
@@ -122,7 +123,10 @@ const Search: FC = () => {
 								{width >= 1200 ? <></> : <CategoryModal />}
 							</div>
 							<div className={styles.line}></div>
-							<Sorted sortOptions={['релевантности', 'популярности']} />
+							<Sorted title='Сортировать по' sortOptions={['релевантности', 'популярности']} />
+							{width <= 1200 && (
+								<Sorted title='Показывать' sortOptions={['5 статей', '10 статей']} />
+							)}
 							<div className={styles.items}>
 								{[...Array(9)].map((_, i) => (
 									<SearchItem key={i} />
@@ -131,7 +135,10 @@ const Search: FC = () => {
 						</div>
 						{width >= 1200 && <Category></Category>}
 					</div>
-					<Pagination/>
+					<div className={styles.footer}>
+						<Pagination />
+						{width >= 1200 && <ShowBy />}
+					</div>
 				</Wrapper>
 			</div>
 		</Layout>
