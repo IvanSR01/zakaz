@@ -72,13 +72,13 @@ const Footer: FC = () => {
 							</svg>
 						</div>
 					</div>
-					<div className={styles.post}>
+					{/* <div className={styles.post}>
 						<p>10 000+</p>
 						<span>статей</span>
-					</div>
+					</div> */}
 					<div className={styles.links}>
-						<a>Политика конфиденциальности</a>
-						<a>Договор оферты</a>
+						{/* <a>Политика конфиденциальности</a>
+						<a>Договор оферты</a> */}
 						<a>
 							Вконтакте{' '}
 							<svg

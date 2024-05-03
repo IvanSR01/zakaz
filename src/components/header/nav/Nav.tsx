@@ -34,7 +34,7 @@ const Nav: FC = () => {
 						</Link>
 					))}
 					<Switch options={['Ru', 'En']} setState={fun} />
-					<Button><a href="https://system.cifra.science/authorize/registration">Вход и регистрация</a></Button>
+					<Button><a href="https://system.cifra.science/authorize/login">Вход и регистрация</a></Button>
 				</>
 			)}
 		</div>
