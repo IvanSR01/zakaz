@@ -8,7 +8,7 @@ import { useReSize } from '@/hooks/useReSize'
 import Menu from './Menu/Menu'
 
 export const links = [
-	{ name: 'Издательство', path: '/house' },
+	{ name: 'Об издательстве', path: '/house' },
 	{
 		name: 'Журналы',
 		path: '/magazine',
