@@ -69,11 +69,9 @@ const Menu: FC = () => {
 								</Link>
 							))}
 							<p>
-								<Button>
-									<a href="https://system.cifra.science/authorize/login">
-										Вход и регистрация
-									</a>
-								</Button>
+								<a href="https://system.cifra.science/authorize/login">
+									<Button>Вход и регистрация</Button>
+								</a>
 							</p>
 							<Switch options={['Ru', 'En']} setState={fun} />
 						</div>

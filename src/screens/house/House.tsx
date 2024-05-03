@@ -90,7 +90,7 @@ const House: FC = () => {
 									</p>
 								</div>
 								<a href="">Порядок рецензирования рукописей.</a>
-							</div>house
+							</div>
 							<div className={styles.item}>
 								<p>Учредитель и издатель</p>
 								<p>
